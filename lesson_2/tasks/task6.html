@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen%20Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        const itemPrice1 = parseInt(prompt('Enter first price:', '250'))
+        const itemQty1 = parseInt(prompt('Enter first quantity:', '2'))
+        const itemPrice2 = parseInt(prompt('Enter second price:', '350'))
+        const itemQty2 = parseInt(prompt('Enter second quantity:', '4'))
+        const itemPrice3 = parseInt(prompt('Enter third price:', '50'))
+        const itemQty3 = parseInt(prompt('Enter third quantity:', '8'))
+
+        const firstSum = itemPrice1 * itemQty1
+        const secondSum = itemPrice2 * itemQty2
+        const thirdSum = itemPrice3 * itemQty3
+
+        const fullPrice = firstSum + secondSum + thirdSum
+
+        document.write('<table>')
+        document.write('<tr>')
+        document.write('<th>Quantity</th>')
+        document.write('<th>Price</th>')
+        document.write('<th>Sum</th>')
+        document.write('</tr>')
+        document.write('<tr>')
+        document.write(`<td>${itemQty1}</td>`)
+        document.write(`<td>${itemPrice1}</td>`)
+        document.write(`<td>${firstSum}</td>`)
+        document.write('</tr>')
+        document.write('<tr>')
+        document.write(`<td>${itemQty2}</td>`)
+        document.write(`<td>${itemPrice2}</td>`)
+        document.write(`<td>${secondSum}</td>`)
+        document.write('</tr>')
+        document.write('<tr>')
+        document.write(`<td>${itemQty3}</td>`)
+        document.write(`<td>${itemPrice3}</td>`)
+        document.write(`<td>${thirdSum}</td>`)
+        document.write('</tr>')
+        document.write('</table>')
+
+        document.write(`<h1>Total price paid: ${fullPrice}</h1>`)
+
+    </script>
+    <div>
+        <a href="../index.html">back</a>
+    </div>
+    <style>
+        body {
+            font-size: 25px;
+            background: linear-gradient(135deg, #244d38 0%, #183b2b 50%, #102c20 100%);
+            font-family: "Playpen Sans", sans-serif;
+            color: #fff;
+        }
+
+        a {
+            transition: scale 0.5s;
+            display: inline-block;
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        a:visited {
+            color: rgb(255, 255, 255);
+        }
+
+        a:hover {
+            scale: 1.2;
+        }
+    </style>
+</body>
+
+</html>
