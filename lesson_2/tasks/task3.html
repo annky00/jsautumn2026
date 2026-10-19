@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen%20Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        const itemPrice = parseInt(prompt('Price ea:', '25'))
+        const itemQty = parseInt(prompt('Quantity:', '5'))
+
+        const fullPrice = itemPrice * itemQty
+        const PDV = (fullPrice / 105) * 5
+
+        document.write(`Загальна вартість товару: ${fullPrice} <br> ПДВ: ${PDV.toFixed(2)}`)
+    </script>
+    <div>
+        <a href="../index.html">back</a>
+    </div>
+    <style>
+        body {
+            font-size: 25px;
+            background: linear-gradient(135deg, #244d38 0%, #183b2b 50%, #102c20 100%);
+            font-family: "Playpen Sans", sans-serif;
+            color: #fff;
+        }
+
+        a {
+            transition: scale 0.5s;
+            display: inline-block;
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        a:visited {
+            color: rgb(255, 255, 255);
+        }
+
+        a:hover {
+            scale: 1.2;
+        }
+    </style>
+</body>
+
+</html>
