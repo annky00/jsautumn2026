@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen%20Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+
+        const randomNumber = 1 + Math.floor(Math.random() * 5)
+
+        const firstAttempt = parseInt(prompt('1. Enter the number from 1 to 5', '3'))
+
+        let result
+
+        if (firstAttempt === randomNumber)
+            result = "Congratulations! You've guessed it!"
+        else {
+            alert('Incorrect, try again')
+            const secondAttempt = parseInt(prompt('2. Enter the number from 1 to 5', '2'))
+            if (secondAttempt === randomNumber)
+                result = "Congratulations! You've guessed it at the second attempt!"
+            else result = `You haven't guessed it. The number was: ${randomNumber}`
+        }
+
+        document.write(result)
+
+    </script>
+    <div>
+        <a href="../index.html">back</a>
+    </div>
+    <style>
+        body {
+            font-size: 25px;
+            background: linear-gradient(135deg, #244d38 0%, #183b2b 50%, #102c20 100%);
+            font-family: "Playpen Sans", sans-serif;
+            color: #fff;
+        }
+
+        a {
+            transition: scale 0.5s;
+            display: inline-block;
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        a:visited {
+            color: rgb(255, 255, 255);
+        }
+
+        a:hover {
+            scale: 1.2;
+        }
+    </style>
+</body>
+
+</html>

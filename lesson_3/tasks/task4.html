@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen%20Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+
+        const age = parseInt(prompt('Enter your age', '32'))
+
+        let result
+
+        if (age <= 0)
+            result = "The age is incorrect"
+        else if (age < 6)
+            result = "You are the child at kindergarten"
+        else if (age <= 18)
+            result = "You are a school pupil"
+        else if (age <= 23)
+            result = "You are a student"
+        else if (age <= 65)
+            result = "You are an employee"
+        else result = "You are a pensioner"
+
+        document.write(result)
+
+    </script>
+    <div>
+        <a href="../index.html">back</a>
+    </div>
+    <style>
+        body {
+            font-size: 25px;
+            background: linear-gradient(135deg, #244d38 0%, #183b2b 50%, #102c20 100%);
+            font-family: "Playpen Sans", sans-serif;
+            color: #fff;
+        }
+
+        a {
+            transition: scale 0.5s;
+            display: inline-block;
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        a:visited {
+            color: rgb(255, 255, 255);
+        }
+
+        a:hover {
+            scale: 1.2;
+        }
+    </style>
+</body>
+
+</html>
